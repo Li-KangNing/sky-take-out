@@ -9,12 +9,16 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+
+/**
+ * 员工登录返回的数据格式
+ */
 @Data
-@Builder
+@Builder//创建builder对象
 @NoArgsConstructor
 @AllArgsConstructor
 @ApiModel(description = "员工登录返回的数据格式")
-public class EmployeeLoginVO implements Serializable {
+public class EmployeeLoginVO implements Serializable {//登录返回的数据格式
 
     @ApiModelProperty("主键值")
     private Long id;
